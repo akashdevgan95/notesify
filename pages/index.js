@@ -21,7 +21,7 @@ const Notes = () => {
     }, [notes])
 
     return (
-        <div className='sm:flex justify-between mt-20'>
+        <div className='homepage flex flex-space-between'>
             <Sidebar notes={notes} setActiveNote={setActiveNote} />
             <NotesView notes={notes} activeNote={activeNote} dispatch={dispatch} />
         </div>

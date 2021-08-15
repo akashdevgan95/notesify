@@ -15,21 +15,21 @@ const NotesView = ({activeNote, dispatch}) => {
     }
 
     return (
-        <div className='sm:w-8/12'>
-             <Segment className='sm:flex justify-between items-center'>
-                <Header as='h1' className='m-0'>{activeNote ? activeNote.title : ''}</Header>
+        <div className='notes-view'>
+             <Segment className='flex flex-space-between'>
+                <Header as='h1' className='varela'>{activeNote ? activeNote.title : ''}</Header>
                 {
                     activeNote && (
-                        <div className='actions mt-2 sm:mt-0'>
+                        <div className='actions'>
                             <Link href={`/notes/${activeNote.id}`}>
-                                <Button className='bg-green-400 mr-3 text-gray-700'>EDIT</Button>
+                                <Button className='bg-green white varela'>EDIT</Button>
                             </Link>
-                            <Button secondary onClick={ handleDelete }>DELETE</Button>
+                            <Button secondary className='varela' onClick={ handleDelete }>DELETE</Button>
                         </div>
                     )
                 }
              </Segment>
-            <Segment style={{ minHeight: 500 }} className='w-full'>
+            <Segment style={{ minHeight: 500 }} className='w-full varela'>
                 { activeNote ? activeNote.note : '' }
             </Segment>
         </div>

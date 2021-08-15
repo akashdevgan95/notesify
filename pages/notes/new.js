@@ -36,12 +36,10 @@ const AddNote = () => {
     }
 
     return (
-        <div className='w-full mt-20'>
-             <div className='sm:flex justify-between items-center mb-4'>
-                <Input placeholder='Title' className='m-0 sm:w-1/4' value={title} onChange={handleTitleChange} />
-                <div className='actions mt-2 sm:mt-0'>
-                    <Button className='bg-green-400 mr-3 text-gray-700' onClick={handleClick}>ADD</Button>
-                </div>
+        <div className='w-full new note'>
+             <div className='flex flex-justify-between'>
+                <Input placeholder='Title' value={title} onChange={handleTitleChange} />
+                <Button className='bg-green white varela' onClick={handleClick}>ADD</Button>
              </div>
             <Form>
                 <TextArea value={note} style={{ minHeight: 500 }} disabled={false} onChange={handleNoteChange} className='w-full'/>
