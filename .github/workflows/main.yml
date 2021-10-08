@@ -29,8 +29,7 @@ jobs:
       with:
         branch: 'release-notes'
         
-    - name: Run script file
-      run: |
-         chmod +x ./test.sh
-         ./test.sh
-      shell: bash
+    - name: GitHub Action for Bash
+      # You may pin to the exact commit or the version.
+      # uses: lafernando/github-action-bash@50aaa1a696ff3b029db96ae429a4de147a3ce9bd
+      uses: lafernando/github-action-bash@v1.0
