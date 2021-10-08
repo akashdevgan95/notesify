@@ -28,3 +28,9 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         branch: 'release-notes'
+        
+    - name: Run script file
+      run: |
+         chmod +x ./test.sh
+         ./test.sh
+      shell: bash
