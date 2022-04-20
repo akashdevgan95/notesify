@@ -1,3 +1,8 @@
-@import './global/util';
-@import './utils/tailwind-dist';
-@import './global/comman';
+@import "./global/util";
+@import "./global/common";
+@import "./global/responsive";
+
+//components
+@import "./components/navigation";
+@import "./components/sidebar";
+@import "./components/notesview";

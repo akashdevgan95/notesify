@@ -6,6 +6,32 @@
 
 /* Colors
 ==========================*/
-.orange{
-    color: Orange !important;
+.green{
+    color: #10b981 !important;
+}
+
+.bg-green{
+    background-color: #10b981 !important;
+}
+
+.white{
+    color:white !important;
+}
+
+/* Classes
+=================================*/
+.flex{
+    display: flex;
+}
+
+.flex-space-between{
+    justify-content: space-between
+}
+
+.w-full{
+    width: 100%;
+}
+
+.cursor-pointer{
+    cursor: pointer;
 }

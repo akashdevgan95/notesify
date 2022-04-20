@@ -1,0 +1,14 @@
+body {
+  background-color: #f6f6f6;
+}
+
+// add and edit note page
+div.edit.note,
+div.new.note {
+  button {
+    margin-left: 10px !important;
+  }
+  form.ui {
+    margin-top: 10px !important;
+  }
+}

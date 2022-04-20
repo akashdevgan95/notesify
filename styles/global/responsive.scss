@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  div.homepage {
+    flex-direction: column;
+    .sidebar,
+    .notes-view {
+      width: 100%;
+    }
+    div.notes-view {
+      margin-top: 20px;
+    }
+  }
+}
